@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "613b2897-d685-412b-aa2b-b7c970ddb719",
+		"name": "testProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7821376"
+	},
+	"item": [
+		{
+			"name": "cyrency",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{scema}}://{{host}}{{port}}/api/currencies",
+							"protocol": "{{scema}}",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"api",
+								"currencies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{scema}}://{{host}}{{port}}/api/currencies?currency=USD&currency=AMD&date=2022-11-24",
+							"protocol": "{{scema}}",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"api",
+								"currencies"
+							],
+							"query": [
+								{
+									"key": "currency",
+									"value": "USD"
+								},
+								{
+									"key": "currency",
+									"value": "AMD"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "date",
+									"value": "2022-11-24"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "btcusdt",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{scema}}://{{host}}{{port}}/api/btcusdt",
+							"protocol": "{{scema}}",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"api",
+								"btcusdt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{scema}}://{{host}}{{port}}/api/btcusdt",
+							"protocol": "{{scema}}",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"api",
+								"btcusdt"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "time_from",
+									"value": "2022-11-27 15:49:00",
+									"disabled": true
+								},
+								{
+									"key": "time_to",
+									"value": "2022-11-27 15:50:05",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "btc",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{scema}}://{{host}}{{port}}/api/latest",
+							"protocol": "{{scema}}",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"api",
+								"latest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{scema}}://{{host}}{{port}}/api/latest?limit=2&page=1",
+							"protocol": "{{scema}}",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"api",
+								"latest"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "time_from",
+									"value": "2022-11-27 23:39:00",
+									"disabled": true
+								},
+								{
+									"key": "time_to",
+									"value": "2022-11-27 15:50:05",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "RUB",
+									"disabled": true
+								},
+								{
+									"key": "currency",
+									"value": "USD",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "scema",
+			"value": "http",
+			"type": "string"
+		},
+		{
+			"key": "host",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": ":8080",
+			"type": "string"
+		}
+	]
+}
